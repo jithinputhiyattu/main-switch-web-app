@@ -1,10 +1,18 @@
-import {Button} from 'react-bootstrap';
-import './App.css';
+import MainNavBar from "./components/main-nav-bar/MainNavBar";
+import Footer from "./components/footer/Footer";
+import "./App.css";
+import { Component } from "react";
 
-function App() {
-  return (
-    <Button  variant="danger">Hello World..!</Button> 
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <MainNavBar />
+        <div className="temp">test</div>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
