@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.img-cont{
+overflow: hidden;
+height: 750px;
+width: 100%;
+}
+
 .temp{
   height: 850px;
   width: 90%;

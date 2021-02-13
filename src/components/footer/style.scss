@@ -1,12 +1,17 @@
 .footer {
   &-main {
     background-color: black;
-    color: white;
-    height: 100px;
+    color: #ffffff;
+    border: 1px solid gray;
+    height: 250px;
   }
   &-column{
-      //- background-color: antiquewhite;
-      //- height: 100px;
+      //margin: 8px;
+      //margin-left: 16px;
+      margin-top: 16px;
+      font-size: 22px;
+
+
   }
 
 }

@@ -7,10 +7,10 @@ class Footer extends PureComponent {
   render() {
     return (
       <div className = 'footer-main'> 
-        <Row>
-          <Col className = 'footer-column'>About Us</Col>
-          <Col>2 of 3</Col>
-          <Col>3 of 3</Col>
+        <Row  md={3}>
+          <Col className = 'footer-column text-center'>Quick Links</Col>
+          <Col className = 'footer-column text-center'>About Us</Col>
+          <Col className = 'footer-column text-center'>Contact Us</Col>
         </Row>
       </div>
     );
