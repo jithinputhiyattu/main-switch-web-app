@@ -1,4 +1,5 @@
 import MainNavBar from "./components/main-nav-bar/MainNavBar";
+import { BrowserRouter, Route, Redirect} from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import "./App.css";
 import { Component } from "react";
@@ -8,7 +9,7 @@ import HomeImage from "./assets/img/homepage.jpg"
 class App extends Component {
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <MainNavBar />
         <Row>
           <Col>
@@ -19,7 +20,7 @@ class App extends Component {
           </Col>
         </Row>
         <Footer />
-      </div>
+      </BrowserRouter>
     );
   }
 }
