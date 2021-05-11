@@ -58,17 +58,19 @@ class MyDropDown extends Component {
     return (
         <Dropdown>
         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-          Custom toggle
+          SEARCH HERE....
         </Dropdown.Toggle>
     
         <Dropdown.Menu as={CustomMenu}>
-          <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-          <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-          <Dropdown.Item eventKey="3" active>
-            Orange
+          <Dropdown.Item eventKey="1">Ice cream sandwich</Dropdown.Item>
+          <Dropdown.Item eventKey="2">Eclair</Dropdown.Item>
+          <Dropdown.Item eventKey="3">Frozen yoghurt</Dropdown.Item>
+          <Dropdown.Item eventKey="4" active>
+          Gingerbread
           </Dropdown.Item>
-          <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+          <Dropdown.Item eventKey="1">Cupcake</Dropdown.Item>
         </Dropdown.Menu>
+        
       </Dropdown>
 
     );
