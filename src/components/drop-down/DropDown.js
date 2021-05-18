@@ -56,6 +56,7 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 class MyDropDown extends Component {
   render() {
     return (
+      <div className = 'set'>
         <Dropdown>
         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
           SEARCH HERE....
@@ -72,7 +73,7 @@ class MyDropDown extends Component {
         </Dropdown.Menu>
         
       </Dropdown>
-
+      </div>
     );
   }
 }
