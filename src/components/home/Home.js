@@ -5,14 +5,10 @@ import HomeImage from "../../assets/img/homepage.jpg"
 class Home extends Component {
   render() {
     return (
-      <Row>
-        <Col>
-          <h1>Main Switch, Testing...!</h1>
-        </Col>
-        <Col>
-          <img className="img-cont" src={HomeImage}></img>
-        </Col>
-      </Row>
+    <div class="h-screen">
+     <div class="h-3/4 bg-cover bg-green-500">welcome Home page..!</div>
+    
+     </div>
     );
   }
 }
