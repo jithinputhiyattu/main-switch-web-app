@@ -7,40 +7,32 @@ import "./style.scss";
 class MainNavBar extends PureComponent {
   render() {
     return (
-      <nav className="relative flex flex-wrap items-center justify-between bg-red-500 mb-3 bg-blue-300">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#home"
-            >
-              HOME
-            </a>
-          </div>
+      <div>
+        <header class="fixed bg-blue-600 shadow-md  z-50 w-full px-5 py-2 flex justify-between items-center">
+          <router-link to="/" class="text-2xl text-white">
+            My App
+          </router-link>
           <div>
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Wiring Bill</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Plumbing Bill</span>
-                </a>
-              </li>
-            </ul>
+            <router-link
+              to="/login"
+              class="text-white hover:bg-gray-700 px-3 rounded py-1"
+            >
+              Login
+            </router-link>
+            <router-link
+              to="/register"
+              class="text-white hover:bg-gray-700 px-3 rounded py-1"
+            >
+              Register
+            </router-link>
           </div>
-        </div>
-      </nav>
+        </header>
+        <main class="bg-gray-200  flex-1">
+        <transition name="slide-fade">
+            <router-view></router-view>
+        </transition>
+    </main>
+      </div>
     );
   }
 }
