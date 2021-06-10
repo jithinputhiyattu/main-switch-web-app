@@ -9,22 +9,21 @@ class MainNavBar extends PureComponent {
     return (
       <div>
         <header class="fixed bg-blue-600 shadow-md  z-50 w-full px-5 py-2 flex justify-between items-center">
-          <router-link to="/" class="text-2xl text-white">
+          <a href="/home" class="text-2xl text-white">
             My App
-          </router-link>
+          </a>
           <div>
-            <router-link
-              to="/login"
+           
+              <a href="/login"
               class="text-white hover:bg-gray-700 px-3 rounded py-1"
             >
               Login
-            </router-link>
-            <router-link
-              to="/register"
+            </a>
+            <a href="/login"
               class="text-white hover:bg-gray-700 px-3 rounded py-1"
             >
               Register
-            </router-link>
+            </a>
           </div>
         </header>
         <main class="bg-gray-200  flex-1">
