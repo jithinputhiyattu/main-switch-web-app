@@ -8,26 +8,33 @@ import "./style.scss";
 class Login extends Component {
   render() {
     return (
-      <Container>
-        <div className="row-md-6 center">
-          <div className="xs-6 col-md-3 mt-6 center">
-            <Form>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
-          </div>
+      <div class="w-1/3 p-5 px-16">
+      <form class="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded">
+        <div class="flex items-center mb-4">
+          <input
+            class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white"
+            type="text"
+            placeholder="Username"
+          ></input>
         </div>
-      </Container>
+        <div class="flex items-center mb-4">
+          <input
+            class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white"
+            type="text"
+            placeholder="Password"
+          ></input>
+        </div>
+        <div class="flex justify-between items-center">
+          <button class="w-full py-2 px-4 rounded bg-blue-600 hover:bg-white-700 text-white font-bold">
+            Login
+          </button>
+          <div class="p-4 text-blue-700">OR</div>
+          <button class="w-full py-2 px-4 rounded bg-blue-600 hover:bg-white-700 text-white font-bold">
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
     );
   }
 }

@@ -1,6 +1,4 @@
 import { PureComponent } from "react";
-import { Col, Row } from "react-bootstrap";
-
 import "./style.scss";
 
 class Footer extends PureComponent {
@@ -14,12 +12,6 @@ class Footer extends PureComponent {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac
               est massa. Donec eget elementum sapien, tincidunt tempor nunc.
               Cras sodales id ipsum at convallis.
-            </p>
-            <p class="p-3 text-gray-400">
-              Morbi tristique massa nec massa auctor, at scelerisque felis
-              consectetur. Morbi tempus et odio sit amet feugiat. Maecenas
-              dignissim a turpis in molestie. Fusce tincidunt vestibulum
-              iaculis.
             </p>
           </div>
 
